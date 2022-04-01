@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    background-color: #9bbcdc;
+}
+.container {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: minmax(100px, auto-fill);
+    margin: 50px;
+    grid-auto-flow: dense;
+}
+.container .box {
+    color: #333;
+    background-color: white;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
